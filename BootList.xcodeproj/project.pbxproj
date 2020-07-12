@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,11 @@
 		3CAA57F024BA74F700CD65CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA57EF24BA74F700CD65CF /* Assets.xcassets */; };
 		3CAA57F324BA74F700CD65CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA57F224BA74F700CD65CF /* Preview Assets.xcassets */; };
 		3CAA57F624BA74F700CD65CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA57F424BA74F700CD65CF /* Main.storyboard */; };
+		3CAA580024BAA13500CD65CF /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = 3CAA57FF24BAA13500CD65CF /* Regex */; };
+		3CC7E75024BBB5EC0040A19A /* licenses.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 3CC7E74F24BBB5EC0040A19A /* licenses.yaml */; };
+		3CC7E75224BBB61E0040A19A /* licenses in Resources */ = {isa = PBXBuildFile; fileRef = 3CC7E75124BBB61E0040A19A /* licenses */; };
+		3CC7E75824BBB9120040A19A /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 3CC7E75724BBB9120040A19A /* Credits.html */; };
+		3CF4CC3D24BB587D00B36827 /* EFIEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4CC3C24BB587D00B36827 /* EFIEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,10 @@
 		3CAA57F524BA74F700CD65CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CAA57F724BA74F700CD65CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CAA57F824BA74F700CD65CF /* BootList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BootList.entitlements; sourceTree = "<group>"; };
+		3CC7E74F24BBB5EC0040A19A /* licenses.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = licenses.yaml; sourceTree = SOURCE_ROOT; };
+		3CC7E75124BBB61E0040A19A /* licenses */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = licenses; sourceTree = SOURCE_ROOT; };
+		3CC7E75724BBB9120040A19A /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		3CF4CC3C24BB587D00B36827 /* EFIEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFIEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CAA580024BAA13500CD65CF /* Regex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				3CAA57EA24BA74F300CD65CF /* BootList */,
+				3CC7E75724BBB9120040A19A /* Credits.html */,
 				3CAA57E924BA74F300CD65CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,11 +68,14 @@
 			children = (
 				3CAA57EB24BA74F300CD65CF /* AppDelegate.swift */,
 				3CAA57ED24BA74F300CD65CF /* ContentView.swift */,
+				3CF4CC3C24BB587D00B36827 /* EFIEntry.swift */,
 				3CAA57EF24BA74F700CD65CF /* Assets.xcassets */,
 				3CAA57F424BA74F700CD65CF /* Main.storyboard */,
 				3CAA57F724BA74F700CD65CF /* Info.plist */,
 				3CAA57F824BA74F700CD65CF /* BootList.entitlements */,
 				3CAA57F124BA74F700CD65CF /* Preview Content */,
+				3CC7E74F24BBB5EC0040A19A /* licenses.yaml */,
+				3CC7E75124BBB61E0040A19A /* licenses */,
 			);
 			path = BootList;
 			sourceTree = "<group>";
@@ -90,6 +104,9 @@
 			dependencies = (
 			);
 			name = BootList;
+			packageProductDependencies = (
+				3CAA57FF24BAA13500CD65CF /* Regex */,
+			);
 			productName = BootList;
 			productReference = 3CAA57E824BA74F300CD65CF /* BootList.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 3CAA57DF24BA74F300CD65CF;
+			packageReferences = (
+				3CAA57FE24BAA13500CD65CF /* XCRemoteSwiftPackageReference "Regex" */,
+			);
 			productRefGroup = 3CAA57E924BA74F300CD65CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,7 +152,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC7E75024BBB5EC0040A19A /* licenses.yaml in Resources */,
 				3CAA57F624BA74F700CD65CF /* Main.storyboard in Resources */,
+				3CC7E75224BBB61E0040A19A /* licenses in Resources */,
+				3CC7E75824BBB9120040A19A /* Credits.html in Resources */,
 				3CAA57F324BA74F700CD65CF /* Preview Assets.xcassets in Resources */,
 				3CAA57F024BA74F700CD65CF /* Assets.xcassets in Resources */,
 			);
@@ -146,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CAA57EE24BA74F300CD65CF /* ContentView.swift in Sources */,
+				3CF4CC3D24BB587D00B36827 /* EFIEntry.swift in Sources */,
 				3CAA57EC24BA74F300CD65CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BootList/Preview Content\"";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BootList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BootList/Preview Content\"";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BootList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CAA57FE24BAA13500CD65CF /* XCRemoteSwiftPackageReference "Regex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sharplet/Regex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CAA57FF24BAA13500CD65CF /* Regex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CAA57FE24BAA13500CD65CF /* XCRemoteSwiftPackageReference "Regex" */;
+			productName = Regex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3CAA57E024BA74F300CD65CF /* Project object */;
 }

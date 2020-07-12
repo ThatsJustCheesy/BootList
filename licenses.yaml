@@ -1,0 +1,7 @@
+components:
+  mit:
+    - Regex, Copyright (c) 2015 Adam Sharp
+
+licenses:
+  mit:
+    name: MIT License
