@@ -7,6 +7,8 @@ On Mac hardware, you can hold down the Option key at startup to launch a boot pi
 
 ## Requirements
 
+BootList is currently only on macOS, but there is no good reason not to port it to other platforms too (so I may do that sometime).
+
 BootList was hacked together as a quick'n'easy solution, so it relies on the wonderful [`bootoption`](https://github.com/bootoption/bootoption) command-line tool to do the heavy lifting. It should be installed in `/usr/local/bin`, e.g., 
 
     brew install bootoption
@@ -21,4 +23,4 @@ Boot menu entries are parsed from the output of `bootoption list`.
 
 When you select to boot from an entry, a small snippet of AppleScript is used to elevate permissions (you will see a password dialog), as `root` access is required to write to NVRAM. The temporary shell process spawned by AppleScript runs `bootoption set -x <bootnum>` to set `BootNext` in NVRAM, which is read by the Mac bootloader as the default operating system on next boot. The system then reboots normally.
 
-I built the GUI with SwiftUI, both as a learning opporunity and so that I get it done quickly. This means that, unfortunately, the app requires macOS 10.15 or later.
+I built the GUI with SwiftUI, both as a learning opporunity and so that I could get it done quickly. This means that, unfortunately, the app requires macOS 10.15 or later.
